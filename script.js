@@ -15,4 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     nameTitle.style.opacity = '1';
     roleText.style.opacity = '1';
   }, 300); // Adjust delay as needed
+
+  // Hamburger menu toggle functionality
+  const hamburgerIcon = document.querySelector('.hamburger-icon');
+  const menuLinks = document.querySelector('.menu-links');
+
+  function toggleMenu() {
+    menuLinks.classList.toggle('open');
+  }
+
+  hamburgerIcon.addEventListener('click', toggleMenu);
 });
