@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     roleText.style.opacity = '1';
   }, 300); // Adjust delay as needed
 
-  // Hamburger menu toggle functionality
+  // Hamburger menu toggle functionality in mobile
   const hamburgerIcon = document.querySelector('.hamburger-icon');
   const menuLinks = document.querySelector('.menu-links');
 
