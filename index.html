@@ -1,393 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Pranj Patel</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Pranj Patel</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="Placement portfolio/index.html">Placement Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Pranj Patel</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="Placement portfolio/index.html">Placement Portfolio</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Pranj profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Pranj Patel</h1>
+      <p class="section__text__p2">Software Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/pranj100204'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/pranj-patel'" />
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#about'" />
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>
+              <strong>Bachelor of IT</strong><br />
+              Griffith University
+            </p>
+            <p>
+              <strong>Diploma of IT</strong><br />
+              Griffith University
+            </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Top Performer</h3>
+            <p>
+              Web Application Development
+              <br>Mobile Application Development
+              <br>Frontend Development
+              <br>UI/UX Design
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am Pranj Patel, a Software Developer Intern based in Gold Coast. With a strong academic background in
+            Information Technology from Griffith University, I specialize in software development, focusing on Web and
+            Mobile Applications as well as Frontend technologies. My hands-on experience has sharpened my
+            problem-solving skills, allowing me to create visually appealing and functional mobile applications. I am
+            passionate about learning and contributing to real-world projects, eager to leverage my skills and
+            enthusiasm in the IT industry. </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <div class="article-container">
+            <article>
+              <img src="./assets/html-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/css-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/java.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/python-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/javascript-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/php-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PHP</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/mysql-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="article-container">
+            <article>
+              <img src="./assets/react-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/angular-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Angular</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/laravel.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Laravel</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/react-native.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Native</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/flutter-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Flutter</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/git-icon.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">React Native</h2>
+          <p> Developed an e-commerce application using React Native and Redux, featuring product listings, a shopping
+            cart, and user authentication. </p> <br>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/pranj-patel/FakeStore'">
+              Github
+            </button>
+            <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">PHP Laravel</h2>
+          <p>Created a work-integrated learning management system for teachers, students, and companies using Laravel
+            and PHP.</p> <br>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/pranj-patel/php-project-2'">
+              Github
+            </button>
+            <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Foodie Find</h2>
+          <p>Developed a food delivery application similar to Uber Eats, using Angular and Ionic for frontend
+            development with supportive features .</p> <br>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/pranj-patel/Angularapp'">
+              Github
+            </button>
+            <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+      onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:pranjpatel1024@gmail.com">pranjpatel1024@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
+        <p><a href="tel:+61 475 382 336">+61 475 382 336</a></p> <!-- Replace with your phone number -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="Placement portfolio/index.html">Placement Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Pranj Patel</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Pranj profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Pranj Patel</h1>
-        <p class="section__text__p2">Software Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/pranj100204'" />
-          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/pranj-patel'" />
-        </div>
-      </div>
-      
-    </section>
-    
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                <strong>Bachelor of IT</strong><br />
-                Griffith University
-              </p>
-              <p>
-                <strong>Diploma of IT</strong><br />
-                Griffith University
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Top Performer</h3>
-              <p>
-                Web Application Development
-                <br>Mobile Application Development
-                <br>Frontend Development
-                <br>UI/UX Design
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am Pranj Patel, a Software Developer Intern based in Gold Coast. With a strong academic background in Information Technology from Griffith University, I specialize in software development, focusing on Web and Mobile Applications as well as Frontend technologies. My hands-on experience has sharpened my problem-solving skills, allowing me to create visually appealing and functional mobile applications. I am passionate about learning and contributing to real-world projects, eager to leverage my skills and enthusiasm in the IT industry.            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <div class="article-container">
-              <article>
-                <img
-                src="./assets/html-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/css-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/python-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/javascript-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/php-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/mysql-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <div class="article-container">
-              <article>
-                <img
-                src="./assets/react-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/angular-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Angular</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/laravel.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Laravel</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/react-native.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React Native</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/flutter-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                src="./assets/git-icon.png"
-                alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">React Native</h2>
-            <p> Developed an e-commerce application using React Native and Redux, featuring product listings, a shopping cart, and user authentication. </p>  <br>
+    <p>Copyright &#169; 2024 Pranj All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/pranj-patel/FakeStore'"
-              >
-                Github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">PHP Laravel</h2>
-            <p>Created a work-integrated learning management system for teachers, students, and companies using Laravel and PHP.</p> <br>
-
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/pranj-patel/php-project-2'"
-              >
-                Github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Foodie Find</h2>
-            <p>Developed a food delivery application similar to Uber Eats, using Angular and Ionic for frontend development with supportive features .</p> <br>
-
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/pranj-patel/Angularapp'"
-              >
-                Github
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:pranjpatel1024@gmail.com">pranjpatel1024@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/phone.png"
-            alt="Phone icon"
-            class="icon contact-icon"
-          />
-          <p><a href="tel:+61 475 382 336">+61 475 382 336</a></p> <!-- Replace with your phone number -->
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Pranj All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
